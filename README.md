@@ -15,7 +15,7 @@ A django recipe tutorial - source: https://www.youtube.com/watch?v=cPfvhpdYaNY&a
 
 #### Chat GPT (used in this instance)
 - In Terminal, Command 'pip install virtualenv'
-- Navigate to project directyory; Command 'virtualenv venv'
+- Navigate to project directory; Command 'virtualenv venv'
 
 
 ### Activate Environment
@@ -33,4 +33,29 @@ A django recipe tutorial - source: https://www.youtube.com/watch?v=cPfvhpdYaNY&a
 ### Install Dependencies
 
 #### Daisy's Instruction
-- 'pip install django'
+- Install django 'pip install django'
+- Start django project: 'django-admin startproject main .'
+    - space followed by . is to ensure that the project files are installed in the current directory; otherwise it creates another folder within the folder
+- Created settings, base & manage.py 
+    - manage.py = where the instructions go to execure django; do not delete or move
+- Start app: 'python manage.py runserver'
+- Link should open successful application
+
+
+#### Chat GPT (mix of two used in this instance)
+- Install django 'pip install django'
+- Generate requirements.txt: 'pip freeze > requirements.txt'
+- Install Dependencies from requirements.txt: 'pip install -r requirements.txt'
+- Update Dependencies: If you add new packages to your project, don't forget to update your requirements.txt by running pip freeze > requirements.txt again.
+- Start django project: 'django-admin startproject main .'
+- Start app: 'python manage.py runserver'
+- If the "Disallowed Host" page shows, copy & paste the cited HTTP Host & copoy into ALLOWED HOSTS in settings.py
+- Try starting the app again
+
+
+
+### Setup Environment Variables
+
+#### Daisy's Instruction
+
+#### Chat GPT (used in this instance)
