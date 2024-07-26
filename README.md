@@ -67,7 +67,7 @@ A django recipe tutorial - source: https://www.youtube.com/watch?v=cPfvhpdYaNY&a
 
 
 ### Debug (Daisy)
-- Debug needs to be true locally but it should be false in production. We don't want to have to continuously change this => set a new environment variable:
+- Debug needs to be true locally but it should be false in production. We don't want to have to continuously change this => set a new environment variable in settings.py:
     DEBUG = 'DEVELOPMENT' in os.environ
         - This will look in your environment for a variable called development. If it exist, DEBUG= True; if not, false
         - If you need to debug in production (when things work locally, but not in production), you can add to production environment & will show error messages
